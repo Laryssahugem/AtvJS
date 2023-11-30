@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idade</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+
+    <Main>
+        <h1>Verificação da Idade</h1>
+        <form action="index.html" method="get" name="formIdade" onsubmit="Verificador()">
+
+            <div>
+                <label for="idadeid">Sua Idade</label>
+                <input type="number" name="idade" id="idadeid" placeholder="Digite sua idade">
+            </div>
+
+            <div>
+                <input type="reset" value="Limpar">
+                <input type="button" value="OK" onclick="Verificador()">
+            </div>
+
+
+        </form>
+
+        <script src="./JS/verificador.js"></script>
+
+
+
+    </Main>
+
+</body>
+
+</html>

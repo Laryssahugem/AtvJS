@@ -12,16 +12,21 @@
 
     <Main>
         <h1>Verificação da Idade</h1>
-        <form action="index.html" method="get" name="formIdade" onsubmit="Verificador()">
+        <form action="index.html" method="get" name="formIdade" id="formulario" onsubmit="Verificador()">
 
             <div>
-                <label for="idadeid">Sua Idade</label>
+                <label for="idadeid" id="labelid">Sua Idade</label>
                 <input type="number" name="idade" id="idadeid" placeholder="Digite sua idade">
             </div>
 
+            <div id="container" style="display: none;">
+                <label for="resultado" id="labelresult">Sua Faixa Etária</label>
+                <input type="text" name="result" id="resultado">
+            </div>
+
             <div>
-                <input type="reset" value="Limpar">
                 <input type="button" value="OK" onclick="Verificador()">
+                <input type="button" value="Voltar" onclick="voltarParaInicial()">
             </div>
 
 
